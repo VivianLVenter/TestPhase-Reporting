@@ -12,9 +12,9 @@ B: https://github.com/BuzzSpaceB/Reporting <br />
 ### Participants In The Phase ###
 
 * 	Vivian Venter 		(u13238435)
-*	Tienie Pritchard 	(u12056741)
-*	Lindelo Mapumulo	(u12002862)
-*	Sphe 				(u12247040)
+*	Tienie Pritchard 		(u12056741)
+*	Lindelo Mapumulo		(u12002862)
+*	Sphelele Malo		(u12247040)
 *	Martha Mohlala 		(u10353403)
 *	Name Surname		(u12221458)
 *	Name Surname		(u13046412)
