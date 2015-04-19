@@ -1,11 +1,13 @@
 # README #
 
-This is a repository for the Testing Phase of the Reporting module for the COS 301 Buzz System Mini Project
-We will be testing the reporting module for both team A and team B.
+This is a repository for the Testing Phase of the Reporting module for the <br />
+COS 301 Buzz System Mini Project. <br />
 
-The links to the repositories:
-A: https://github.com/KyhleOhlinger/Reporting-A-COS301
-B: https://github.com/BuzzSpaceB/Reporting
+We will be testing the reporting module for both team A and team B. <br />
+
+The links to the repositories: <br />
+A: https://github.com/KyhleOhlinger/Reporting-A-COS301 <br />
+B: https://github.com/BuzzSpaceB/Reporting <br />
 
 ### Participants In The Phase ###
 
