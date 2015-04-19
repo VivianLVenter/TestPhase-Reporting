@@ -17,5 +17,5 @@ B: https://github.com/BuzzSpaceB/Reporting <br />
 *	Sphelele Malo		(u12247040)
 *	Martha Mohlala 		(u10353403)
 *	Name Surname		(u12221458)
-*	Name Surname		(u13046412)
+*	Goodness Adegbenro	(u13046412)
 *	Name Surname		(u10668544)
