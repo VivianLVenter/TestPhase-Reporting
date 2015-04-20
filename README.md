@@ -19,3 +19,4 @@ B: https://github.com/BuzzSpaceB/Reporting <br />
 *	Name Surname		(u12221458)
 *	Goodness Adegbenro	(u13046412)
 *	Name Surname		(u10668544)
+*	Michael Nunes		(u12104592)
