@@ -5,3 +5,13 @@ GetThreadAppraisal
 The GetThreadAppraisal function works and produces the required output and will calculate the appraisals.All the parameters and post conditions are present.The data is stored correctly into a dataset,JSON string, which contains all the entries for that thread and a action value.The action value which is specified as one of the parameters to be either Sum,Avg,Max,Min or Num.The entries contain all of the threads and the information about the thread including an ordinal vale for the thread which is used in the calculation that is specified by the action.There is no error checking so if the action value is not one that is specified then the action value will not be set and this could cause problems in integration.
 ExportThreadAppraisal
 The ExportThreadAppraisal function works and runs without error.The function has only one parameter which is a threadID parameter which is used to get the thread and then it creates a CSV file using a helper function.The CSV file is created with all the relevant information about the threads appraisals and then is downloaded for the user.IF the ThreadID is not in the system the functions exits but does not notify the user of this error.
+
+Import Thread Appraisal
+The ImportThreadAppraisal function could not be tested because it was not implemented. 
+
+Export Thread
+The ExportThread function was tested and runs successfully. It provides the functionality to backup the content of a thread or subset of a thread. It achieves this by getting the threads using the ThreadID parameter. It then converts the threads to a serialized object and writes the serialized thread object to a file for backup. However, this function does not throw exceptions when errors occur. It only sends an output to the console which will not be visible to the user. Therefore, there is no way of knowing if an error has occured.
+
+Import Thread
+The ImportThread function was tested and runs successfully. It provides the functionality to restore the content of a thread or subset of a thread that was stored using the ExportThread function. It achieves this by retrieving the serialized thread that was exported to a backup file in the ExportThread function. It converts the serialized thread to an unserialized  thread object and returns the imported thread. Therefore, this function meets all the pre and post condition requirements. This function however, does not throw appropriate exceptions if an error occurs to notify users of this error.
+ 
