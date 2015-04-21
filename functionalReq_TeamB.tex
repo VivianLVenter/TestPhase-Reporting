@@ -11,29 +11,29 @@
 
 %Vivian
 \subsubsection{Import Thread Appraisal}
-\begin{framed}
+
 \paragraph{\color{black} \\ Data in an external file that was created using the exportThreadAppraisal function is used.\\} 
 \color{myOrange}
 \textbf{\small \emph{Partial Passed}} \\
 \color{black}The function do make use of a file. The file is sent as arguments in the importThreadAppraisal function (parameters are directory and  fileName). So in this function they assume this is the file created by the exportThreadAppraisal function.
 \par
-\end{framed}
 
-\begin{framed}
+
+
 \paragraph{\color{black} The data set is associated with only one member and only one specified appraisal.\\}
 \color{red}
 \textbf{\small \emph{Failed}} \\
 \color{black} The function never actually check if the data set is about only one member and only one specific appraisal. Therefore the data cannot be deemed as eligible for import.
 \par
-\end{framed}
 
-\begin{framed}
+
+
 \paragraph{\color{black}A record contains all detail about the post along with a field that should contain an ordinal number that represents the levels of the specified appraisal.\\}
 \color{green}
 \textbf{\small \emph{Passed}} \\
 \color{black}The record does contain all detail about the post and a field that represents the leves of the specified appraisal which is the appraisalValue.
 \par
-\end{framed}
+
 \paragraph{\color{black} Edits to the data is ignored when importing a thread appraisal.\\}
 \color{red}
 \textbf{\small \emph{Failed}} \\
