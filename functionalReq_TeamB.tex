@@ -13,7 +13,7 @@
 \subsubsection{Import Thread Appraisal}
 \paragraph{Data in an external file that was created using the exportThreadAppraisal function is used.\\} 
 \textbf{\emph{Partial Passed}} \\
-The module do make use of a file. The file is sent as arguments in the importThreadAppraisal function (parameters are directory and  fileName). So in this function they assume this is the file created by the exportThreadAppraisal function.
+The function do make use of a file. The file is sent as arguments in the importThreadAppraisal function (parameters are directory and  fileName). So in this function they assume this is the file created by the exportThreadAppraisal function.
 \par
 
 \paragraph{The data set is associated with only one member and only one specified appraisal.\\}
@@ -48,9 +48,15 @@ The function does check the validity of the appraisal, however no exception is t
 The appraisal level is check for out of range, however no exception is thrown/raised when is it out of range and there the service delivery is not stopped if the appraisal level is out of range.
 \par
 
-
-\subsubsection{}
-
+\subsubsection{Export Thread}
+\paragraph{An external file is created.\\}
+\textbf{\emph{Partial Passed}} \\
+The function does create an external file, however :
+	\begin{itemize}
+	\item{The data generated to by the queryThread function is assumed to be given as an argument to the function  (parameter threadObject).}
+	\item{The data is actually not correctly stored in the file since the threadObject is not parsed as a JSON-string. The object is directly stored in the file. So the actual data of the threadObject is not stored in the file.}
+	\end{itemize}
+\par
 
 
 \subsubsection{}
