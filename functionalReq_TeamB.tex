@@ -1,1 +1,58 @@
 \subsection{Functional Requirements Review}
+%Tienie
+\subsubsection{Threads.getThreadStats}
+
+
+
+
+
+
+
+
+%Vivian
+\subsubsection{Import Thread Appraisal}
+\paragraph{Data in an external file that was created using the exportThreadAppraisal function is used.\\} 
+\textbf{\emph{Partial Passed}} \\
+The module do make use of a file. The file is sent as arguments in the importThreadAppraisal function (parameters are directory and  fileName). So in this function they assume this is the file created by the exportThreadAppraisal function.
+\par
+
+\paragraph{The data set is associated with only one member and only one specified appraisal.\\}
+\textbf{\emph{Failed}} \\
+The function never actually check if the data set is about only one member and only one specific appraisal. Therefore the data cannot be deemed as eligible for import.
+\par
+
+\paragraph{A record contains all detail about the post along with a field that should contain an ordinal number that represents the levels of the specified appraisal.\\}
+\textbf{\emph{Passed}} \\
+The record does contain all detail about the post and a field that represents the leves of the specified appraisal which is the appraisalValue.
+\par
+
+\paragraph{Edits to the data is ignored when importing a thread appraisal.\\}
+\textbf{\emph{Failed}} \\
+The function does not prevent edits to the data and there is not clear indicated of ignoring such edits.
+\par
+
+\paragraph{For each record the assignAppraisalToPost function is applied.\\}
+\textbf{\emph{Passed}} \\
+The function does call assignAppraisalToPost for each record.
+\par
+
+\paragraph{The appraisal level as stored in the file for each post is updated as an appraisal assigned by the member associated with the data set.\\}
+\textbf{\emph{Failed}} \\
+The function does not use the appraisal level to update the data set.
+\par
+
+\paragraph{Check validity of member and appraisal.\\}
+\textbf{\emph{Partial Passed}} \\
+The function does check the validity of the member, however they have a dummy function that only returns true.\\
+The function does check the validity of the appraisal, however no exception is thrown/raised it only returns true or false and there is also no means of catching an exception, that is the isValid function is not surrounded with try/catch blocks to catch exceptions and therefore the service delivery is not stopped when the appraisal is not valid.\\
+The appraisal level is check for out of range, however no exception is thrown/raised when is it out of range and there the service delivery is not stopped if the appraisal level is out of range.
+\par
+
+
+\subsubsection{}
+
+
+
+\subsubsection{}
+
+
