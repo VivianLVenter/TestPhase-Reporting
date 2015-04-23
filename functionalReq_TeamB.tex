@@ -133,15 +133,11 @@
 \color{black}The function do make use of a file. The file is sent as arguments in the importThreadAppraisal function (parameters are directory and  fileName). So in this function they assume this is the file created by the exportThreadAppraisal function.
 \par
 
-
-
 \paragraph{\color{black} The data set is associated with only one member and only one specified appraisal.\\}
 \color{red}
 \textbf{\small \emph{Failed}} \\
 \color{black} The function never actually check if the data set is about only one member and only one specific appraisal. Therefore the data cannot be deemed as eligible for import.
 \par
-
-
 
 \paragraph{\color{black}A record contains all detail about the post along with a field that should contain an ordinal number that represents the levels of the specified appraisal.\\}
 \color{green}
@@ -175,6 +171,19 @@ The function does check the validity of the appraisal, however no exception is t
 The appraisal level is check for out of range, however no exception is thrown/raised when is it out of range and there the service delivery is not stopped if the appraisal level is out of range.
 \par
 
+\paragraph{\color{black} Full use case test rating\\}
+\color{myOrange}
+\textbf{\small \emph{Partial Passed}} \\
+\color{black}
+There were 7 requirements listed for this use case. 
+\begin{itemize}
+	\item{2 out of 7 passed.} 
+	\item{2 out of 7 partially passed.}
+	\item{3 out of 7 failed.}
+\end{itemize}
+Hence, it is save to say the use case only partially passed due to the fact that most requirements was implemented, but there were a lot of requirements missing as well.
+\par
+
 \subsubsection{Export Thread }
 \paragraph{\color{black}\\An external file is created.\\}
 \color{myOrange}
@@ -184,6 +193,13 @@ The appraisal level is check for out of range, however no exception is thrown/ra
 	\item{The data generated to by the queryThread function is assumed to be given as an argument to the function  (parameter threadObject).}
 	\item{The data is actually not correctly stored in the file since the threadObject is not parsed as a JSON-string. The object is directly stored in the file. So the actual data of the threadObject is not stored in the file.}
 	\end{itemize}
+\par
+
+\paragraph{\color{black} Full use case test rating\\}
+\color{red}
+\textbf{\small \emph{Failed}} \\
+\color{black}
+This use case failed, since the contents of the file is not what is expected at all. (See point 2 above).
 \par
 
 \subsubsection{Import Thread}
@@ -203,4 +219,16 @@ The appraisal level is check for out of range, however no exception is thrown/ra
 \color{red}
 \textbf{\small \emph{Failed}} \\
 \color{black}The function never adds the content to the Buzz Space and therefore does not check if it is already in the Buzz Space. 
+\par
+
+\paragraph{\color{black} Full use case test rating\\}
+\color{red}
+\textbf{\small \emph{Failed}} \\
+\color{black}
+There were 3 requirements listed for this use case. 
+\begin{itemize}
+	\item{1 out of 3 passed.} 
+	\item{2 out of 3 failed.}
+\end{itemize}
+This use case failed, since a thread was not restored or added to the Buzz Space which was the core functionality of this use case.
 \par
