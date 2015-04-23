@@ -1,1 +1,26 @@
 \subsection{Architectual Requirements Review}
+
+\subsubsection{Software quality requirements} 
+
+\paragraph{\\Reliability:}
+Parameter values aren't checked before db access is made, which shouldn't be a problem, since these functions aren't directly called by a client, but garbage values could cause a fatal error. Errors aren't very well handled, and in some cases aren't getting handled at all.
+\par
+\paragraph{Maintainability:}
+The code is well laid out, very easy for a programmer to understand and add upon.
+\par
+\paragraph{Test-ability:}
+ No unit test where found for this module, but the easy readability makes testing easier. The (mostly) lack of error handling makes the challenge a bit more daunting.
+\par
+\paragraph {Audit-ability:}
+There are no tables in the db for auditing, so tracking the origin and correctness of a transaction is impossible.
+\\
+\par
+
+
+\subsubsection{Architectural components}
+\paragraph {Framework(s):}
+ To use this module as part of the system, NodeJS was used.
+\par
+\paragraph{Technologies:}
+ Javascript was obviously used for implementation, JSON was used to pass mongoDB documents as objects, and json2csv was used to export some of those JSON strings as csv files. There was no trace of mocha, unit.js or electrolyte being used as specified.
+\par
