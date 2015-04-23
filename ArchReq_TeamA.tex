@@ -8,20 +8,16 @@ The module allows for manual intergration by exporting JSON objects into csv fil
 \subsubsection{Software quality requirements} 
 
 \paragraph{\\Reliability:}
-Parameter values aren't checked before db access is made, which shouldn't be a problem, since these functions aren't directly called by a client, but garbage values could cause a fatal error. Errors aren't very well handled, and in some cases aren't getting handled at all.
+Parameter values aren't checked before db access is made, which shouldn't be a problem, since these functions aren't directly called by a client, but garbage values could cause a fatal error. Errors aren't very well handled, and in some cases aren't getting handled at all. There was no package.json file so it is not easily deployable because you cannot see what depencies the module needs. The function export thread appraisal could not be found, so the module cannot realise an offline facility to apply a manual appraisal. Its also the same case with import praise appraisal. 
 \par
 \paragraph{Maintainability:}
-The code is well laid out, very easy for a programmer to understand and add upon. However though there are too many files and directories, most of the files could have been out together to create a single file.
+The code is well laid out, very easy for a programmer to understand and add upon. However though there are too many files and directories, most of the files could have been out together to create a single file. The technologies used also seem like they will be used for quite some time to come, making the module easily maintainable.
 \par
 \paragraph{Test-ability:}
  No unit test where found for this module, but the easy readability makes testing easier. The (mostly) lack of error handling makes the challenge a bit more daunting.
 \par
 \paragraph {Audit-ability:}
-There are no tables in the db for auditing, so tracking the origin and correctness of a transaction is impossible.
-\\
-\par
-\paragraph{Reliabiality:}
-There was no package.json file so it is not easily deployable because you cannot see what depencies the module needs. 
+There are no tables in the db for auditing, so tracking the origin and correctness of a transaction is impossible. The module provides a function called getThreadStats which provides a way to report user threads and posts, unfortunately thats only providing logs for another module not the reporting module. 
 \par
 \paragraph{Perfomance:}
 There were no unit tests for this module so could not test how long it took for the reporting functions to complete. 
@@ -31,6 +27,7 @@ There were no unit tests for this module so could not test how long it took for 
 \subsubsection{Architectural components}
 \paragraph {Framework(s):}
  To use this module as part of the system, NodeJS was used.
+ Handlebars templating framework was used to render templates on the client side and server side.
 \par
 \paragraph{Technologies:}
  Javascript was obviously used for implementation, JSON was used to pass mongoDB documents as objects, and json2csv was used to export some of those JSON strings as csv files. There was no trace of mocha, unit.js or electrolyte being used as specified. HTML was also used to display the values returned. Mongoose was also used to wrap up the native Node.js MongoDb driver. Node-serialize was used to serialize objects into JSON objects.
