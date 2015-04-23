@@ -1,15 +1,17 @@
 \subsection{Architectual Requirements Review}
 
+\subsubsection{Intergration Channels}
+\paragraph {Manual Intergration}
+The module allows for manual intergration by exporting JSON objects into csv files so that they can be used by other modules.
+\par
+
 \subsubsection{Software quality requirements} 
 
 \paragraph{\\Reliability:}
 Parameter values aren't checked before db access is made, which shouldn't be a problem, since these functions aren't directly called by a client, but garbage values could cause a fatal error. Errors aren't very well handled, and in some cases aren't getting handled at all.
 \par
 \paragraph{Maintainability:}
-The code is well laid out, very easy for a programmer to understand and add upon.
-Express will be used a server which supports configurable
-routing (tactic ??) in order to improve maintainability and 
-exibility.
+The code is well laid out, very easy for a programmer to understand and add upon. However though there are too many files and directories, most of the files could have been out together to create a single file.
 \par
 \paragraph{Test-ability:}
  No unit test where found for this module, but the easy readability makes testing easier. The (mostly) lack of error handling makes the challenge a bit more daunting.
@@ -19,13 +21,10 @@ There are no tables in the db for auditing, so tracking the origin and correctne
 \\
 \par
 \paragraph{Reliabiality:}
+There was no package.json file so it is not easily deployable because you cannot see what depencies the module needs. 
 \par
 \paragraph{Perfomance:}
-There were no unit tests for this module so could not test the how long it took for the reporting functions to complete.
-\par
-\paragraph{Security:}
-\par
-\paragraph{Intergratability:}
+There were no unit tests for this module so could not test how long it took for the reporting functions to complete. 
 \par
 
 
