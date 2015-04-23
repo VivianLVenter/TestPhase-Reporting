@@ -7,6 +7,9 @@ Parameter values aren't checked before db access is made, which shouldn't be a p
 \par
 \paragraph{Maintainability:}
 The code is well laid out, very easy for a programmer to understand and add upon.
+Express will be used a server which supports configurable
+routing (tactic ??) in order to improve maintainability and 
+exibility.
 \par
 \paragraph{Test-ability:}
  No unit test where found for this module, but the easy readability makes testing easier. The (mostly) lack of error handling makes the challenge a bit more daunting.
@@ -18,6 +21,7 @@ There are no tables in the db for auditing, so tracking the origin and correctne
 \paragraph{Reliabiality:}
 \par
 \paragraph{Perfomance:}
+There were no unit tests for this module so could not test the how long it took for the reporting functions to complete.
 \par
 \paragraph{Security:}
 \par
@@ -30,5 +34,5 @@ There are no tables in the db for auditing, so tracking the origin and correctne
  To use this module as part of the system, NodeJS was used.
 \par
 \paragraph{Technologies:}
- Javascript was obviously used for implementation, JSON was used to pass mongoDB documents as objects, and json2csv was used to export some of those JSON strings as csv files. There was no trace of mocha, unit.js or electrolyte being used as specified.
+ Javascript was obviously used for implementation, JSON was used to pass mongoDB documents as objects, and json2csv was used to export some of those JSON strings as csv files. There was no trace of mocha, unit.js or electrolyte being used as specified. HTML was also used to display the values returned. Mongoose was also used to wrap up the native Node.js MongoDb driver. Node-serialize was used to serialize objects into JSON objects.
 \par
