@@ -1,19 +1,19 @@
 \subsection{Functional Requirements Review}
 \subsubsection{Treads.getThreadStats}
-The getThreadStats function has achieved what it needs to do but it has minimal error checking.The parameters that are required are all available.The set parameter contains a list of posts.The action parameter is tested for Num, MemCount, MaxDepth, AvgDepth.The action that is specified will carry out the appropriate action to be done with the threads such as calculate the number of threads.There is no error checking so if the action specified is not one of the ones in the functional requirements then the return value will be null which could cause a problem when the module is integrated with the other modules.There is no exception thrown so the function will exit without any knowledge of an error.
+The getThreadStats function has achieved what it needs to do but it has minimal error checking. The parameters that are required are all available. The set parameter contains a list of posts. The action parameter is tested for Num, MemCount, MaxDepth, AvgDepth. The action that is specified will carry out the appropriate action to be done with the threads such as calculate the number of threads. There is no error checking so if the action specified is not one of the ones in the functional requirements then the return value will be null which could cause a problem when the module is integrated with the other modules. There is no exception thrown so the function will exit without any knowledge of an error.
 \paragraph{\color{black} Full use case test rating\\}
 \color{myOrange}
 \textbf{\small \emph{Partial Pass}} \\
 \color{black} The function will run but in some cases the lack of error checking will cause errors in integration.
-\subsubsection{GetThreadAppraisal}
-The GetThreadAppraisal function works and produces the required output and will calculate the appraisals.All the parameters and post conditions are present.The data is stored correctly into a dataset,JSON string, which contains all the entries for that thread and a action value.The action value which is specified as one of the parameters to be either Sum,Avg,Max,Min or Num.The entries contain all of the threads and the information about the thread including an ordinal vale for the thread which is used in the calculation that is specified by the action.There is no error checking so if the action value is not one that is specified then the action value will not be set and this could cause problems in integration.
+\subsubsection{Get Thread Appraisal}
+The GetThreadAppraisal function works and produces the required output and will calculate the appraisals. All the parameters and post conditions are present. The data is stored correctly into a dataset, JSON string, which contains all the entries for that thread and a action value. The action value which is specified as one of the parameters to be either Sum, Avg, Max, Min or Num. The entries contain all of the threads and the information about the thread including an ordinal value for the thread which is used in the calculation that is specified by the action. There is no error checking so if the action value is not one that is specified then the action value will not be set and this could cause problems in integration.
 \paragraph{\color{black} Full use case test rating\\}
 \color{myOrange}
 \textbf{\small \emph{Partial Pass}} \\
 \color{black} The function will run but in some cases the lack of error checking will cause errors in integration.
 
-\subsubsection{ExportThreadAppraisal}
-The ExportThreadAppraisal function could not be found.This function has a medium priority and is important to the system.No testing could be done on this use case.This functionality is important as it allows the user to  export the thread appraisal and allows offline editing.
+\subsubsection{Export Thread Appraisal}
+The ExportThreadAppraisal function could not be found. This function has a medium priority and is important to the system. No testing could be done on this use case. This functionality is important as it allows the user to  export the thread appraisal and allows offline editing.
 \paragraph{\color{black} Full use case test rating\\}
 \color{red}
 \textbf{\small \emph{Failed}} \\
