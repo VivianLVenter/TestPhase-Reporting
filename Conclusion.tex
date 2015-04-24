@@ -1,14 +1,14 @@
 \subsection{Team A}
-The general consensus for this module was that there was poor error checking/handling. While most use cases work well and perform desired tasks, there are many instances where there might be an error that the user will not know about. This could result in the system failing or being non-responsive without the user having an explanation as to why this is the case. What little error checking did occur, they were console logged instead of thrown as an exception, again resulting in potential system failure without reporting the reason to the user.
+The general consensus for this module was that there was poor error checking/handling. While most use cases work well and perform the specified tasks, there are many instances where there might be an error that the user will not know about. This could result in the system failing or being non-responsive without the user having an explanation as to why this is the case. What little error checking did occur, they were console logged instead of thrown as an exception, again resulting in potential system failure without reporting the reason to the user.
 \newline \newline
-Most software (non-functional) requirements were met, although reliability could be compromised because of the poor error handling/checking. Auditabilty isn't possible because of the absense of a tracking table in the database which was however beyond the scope of this module. 
+Most software (non-functional) requirements were met, although reliability could be compromised because of the poor error handling/checking. Auditabilty isn't possible because of the absence of a tracking table in the database which was however beyond the scope of this module. 
 \newline \newline
 Technologies used were in line with the specification, with a few (mocha, unit.js electrolyte) not being used at all.
 
 \subsection{Team B}
-The biggest issue in this module were the assumptions made about data being used in operations. Simply using data and not testing validy could result in garbage values being used in operations and undesired output being produced. There were also some components of certain use cases that failed, making the use case not work as expected. This is obviously not ideal.
+The biggest issue in this module were the assumptions made about data being used in operations. Simply using data and not testing validy could result in garbage values being used in operations and undesired output being produced. There were also some components of certain use cases that failed, making the use case not work as expected, and in some cases not at all.
 \newline \newline
-Maintainability is compromised by the un-readablity of the code, as well as code duplication in functions. Adding functionality would be difficult.  
+Maintainability is compromised by the un-readablity of the code, as well as code duplication in functions. Adding functionality would be difficult. The use of unit tests however does aid in testing and so adheres to the test-ability of the module.   
 
 \subsection{Overall}
 Overall, team A have created a better reporting module than team B. Team B have issues which could result in bigger errors than team A, and with Team B's module compromising the Maintainability requirement, it makes it the less desirable choice to fix for the bigger system. 
